@@ -53,15 +53,6 @@ $(document).ready(function(){
 			var tail = {x: newX, y: newY};
 			score++;
 			drawFood();
-            if(score >= 2){
-                game_loop = setInterval(draw, 90);    
-            }else if(score>=4){
-                game_loop = setInterval(draw, 80);     
-            }else if(score >= 8){
-                game_loop = setInterval(draw, 70);
-            }else if(score >= 14){
-                game_loop = setInterval(draw, 60);
-            }
 		}
 		else{
 			var tail = snake_array.pop(); 
